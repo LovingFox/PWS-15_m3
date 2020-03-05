@@ -131,7 +131,7 @@ main {
    text-transform: capitalize;
 
    color: #E0E0E0;
-   background-color: #FF2D2D;;
+   background-color: #FF2D2D;
 }
 .main-intro img {
    margin-top: 10px;
@@ -147,7 +147,7 @@ main {
    font-family: Open Sans;
 }
 .main-service-left {
-   width: 50%;
+   width: 51%;
 }
 .main-service-left h1 {
    margin: 0;
@@ -159,16 +159,35 @@ main {
 }
 .main-service-left p {
    margin-top: 35px;
+   margin-bottom: 51px;
+   width: 520px;
 
    font-size: 16px;
    line-height: 28px;
 }
+.learn-more {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 223px;
+   height: 52px;
+   font-family: Open Sans;
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: capitalize;
+
+   color: #FF2D2D;
+   background-color: rgba(0, 0, 0, 0.0001);
+   border: 2px solid #FF0000;
+}
+
 .main-service-rigth {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    margin-top: 8px;
-   width: 50%;
+   width: 49%;
 }
 .main-service-rigth > div {
    max-width: 290px;
@@ -239,6 +258,10 @@ footer {
       width: 95%;
    }
    .main-service-left {
+      width: 100%;
+      margin-bottom: 60px;
+   }
+   .main-service-left p {
       width: 100%;
    }
    .main-service-rigth {
