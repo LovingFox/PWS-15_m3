@@ -5,6 +5,12 @@
 }
 @font-face {
    font-family: "Open Sans";
+   font-weight: 400;
+   font-style: italic;
+   src: url('../fonts/OpenSans-Italic.ttf');
+}
+@font-face {
+   font-family: "Open Sans";
    font-weight: 600;
    src: url('../fonts/OpenSans-SemiBold.ttf');
 }
@@ -194,7 +200,7 @@ main {
    min-height: 260px;
    width: auto;
 }
-.main-service-rigth h1 {
+.main-service-rigth h2 {
    margin-top: 17px;
    margin-bottom: 10px;
    font-weight: 600;
@@ -267,10 +273,91 @@ main {
    margin-top: 30px;
 }
 .main-products-blocks > div {
-   background-color: #F2F2F2;
+   background-color: #5281FF;
    height: 290px;
    width: 290px;
    margin: 11px;
+}
+
+.main-team {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-bottom: 110px;
+   width: 1250px;
+   font-family: Open Sans;
+}
+.main-team > h1 {
+   font-weight: bold;
+   font-size: 42px;
+   letter-spacing: 0.38px;
+   text-transform: uppercase;
+}
+.main-team > p {
+   padding-top: 20px;
+   max-width: 470px;
+   font-size: 16px;
+   line-height: 28px;
+}
+.main-team > hr {
+   margin-top: 28px;
+   height: 3px;
+   width: 134px;
+   background-color: #FF2D2D;
+   border: 0;
+}
+.main-team > div {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 65px;
+}
+.main-team-left {
+   background-color: #FF3F40;
+   height: 460px;
+   width: 320px;
+}
+.main-team-rigth {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 10px 0px 0px 70px;
+}
+.main-team-rigth > h2 {
+   font-weight: 600;
+   font-size: 30px;
+   letter-spacing: 0.28px;
+   text-transform: uppercase;
+}
+.main-team-rigth > p {
+   margin-top: 23px;
+   max-width: 663px;
+   font-size: 16px;
+   line-height: 28px;
+}
+.main-team-rigth-text {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   list-style-type: none;
+}
+.main-team-rigth-text li {
+   margin-right: 35px;
+   font-size: 18px;
+   font-style: italic;
+   letter-spacing: 0.9px;
+   line-height: 24px;
+}
+.main-team-rigth-pic {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 60px;
+}
+.main-team-rigth-pic div {
+   margin: 10px 15px;
+   background-color: #FF3F40;
+   height: 210px;
+   width: 180px;
 }
 
 footer {
@@ -338,6 +425,15 @@ footer {
    }
    .main-products {
       width: 95%;
+   }
+   .main-team {
+      width: 95%;
+   }
+   .main-team > div {
+      flex-direction: column;
+   }
+   .main-team-rigth {
+      margin: 0;
    }
 }
 
