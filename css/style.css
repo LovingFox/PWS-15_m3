@@ -413,6 +413,109 @@ main {
    border: 0;
 }
 
+.main-feedback {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-top: 98px;
+   padding-bottom: 108px;
+   width: 1250px;
+   font-family: Open Sans;
+}
+.main-feedback > h1 {
+   font-weight: bold;
+   font-size: 42px;
+   letter-spacing: 0.38px;
+   text-transform: uppercase;
+}
+.main-feedback > p {
+   padding-top: 35px;
+   max-width: 700px;
+   font-size: 16px;
+   line-height: 28px;
+}
+.main-feedback > hr {
+   margin-top: 48px;
+   height: 3px;
+   width: 130px;
+   background-color: #FF2D2D;
+   border: 0;
+}
+.main-feedback > div {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 74px;
+   width: 100%;
+}
+.main-feedback-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 59%;
+}
+.main-feedback-contact {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 35%;
+   padding-left: 54px;
+   padding-right: 10px;
+   background-color: #2D2D2D;
+   color: #FFFFFF;
+   box-sizing: border-box;
+}
+.main-feedback-form > div {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
+}
+.main-feedback-form > div > input {
+   padding-left: 54px;
+   width: 46%;
+   height: 71px;
+   background-color: rgb(229, 229, 229);
+   color: #000000;
+   border: 0;
+   font-size: 16px;
+   line-height: 28px;
+   box-sizing: border-box;
+}
+.main-feedback-form > input {
+   margin-top: 44px;
+   padding-left: 54px;
+   width: 100%;
+   height: 250px;
+   background-color: rgb(229, 229, 229);
+   color: #000000;
+   border: 0;
+   font-size: 16px;
+   line-height: 28px;
+   box-sizing: border-box;
+}
+.main-feedback-form button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 44px;
+   width: 100%;
+   height: 74px;
+   font-size: 18px;
+   font-weight: bold;
+   text-transform: uppercase;
+
+   color: #FFFFFF;
+   background-color: #FF2D2D;
+   border: 0;
+}
+.main-feedback-contact h2 {
+   margin: 20px 0;
+}
+.main-feedback-contact p {
+   margin: 15px 0;
+}
+
 footer {
    flex: 0 0 auto;
 }
@@ -488,6 +591,19 @@ footer {
    .main-team-rigth {
       margin: 0;
    }
+   .main-feedback {
+      width: 95%;
+   }
+   .main-feedback > div {
+      flex-direction: column;
+   }
+   .main-feedback-form {
+      width: 95%;
+   }
+   .main-feedback-contact {
+      margin-top: 30px;
+      width: 95%;
+   }
 }
 
 @media screen and (max-width: 600px) {
@@ -498,6 +614,10 @@ footer {
       height: 178px;
    }
    .main-subscribe input {
+      width: 100%;
+   }
+   .main-feedback-form > div > input {
+      margin: 5px 0;
       width: 100%;
    }
 }
